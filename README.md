@@ -1,73 +1,114 @@
-# Welcome to your Lovable project
 
-## Project info
+# Sistema de Gerenciamento de Favoritos
 
-**URL**: https://lovable.dev/projects/3adcb1e8-4878-498d-bd31-0d22f73a01f7
+Um aplicativo web moderno para organizar e gerenciar seus favoritos com interface intuitiva em português brasileiro.
 
-## How can I edit this code?
+## 🚀 Características Principais
 
-There are several ways of editing your application.
+- **Interface Hierárquica**: Organize favoritos em pastas e subpastas
+- **Drag & Drop**: Reorganize itens facilmente arrastando e soltando
+- **Sistema de Tags**: Categorize e encontre favoritos rapidamente
+- **Busca Inteligente**: Pesquise por título, descrição ou tags
+- **Design Responsivo**: Funciona perfeitamente em todos os dispositivos
+- **Tema Escuro**: Interface moderna com glassmorphism
 
-**Use Lovable**
+## 🛠️ Tecnologias Utilizadas
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3adcb1e8-4878-498d-bd31-0d22f73a01f7) and start prompting.
+- **Frontend**: React 18, TypeScript, Tailwind CSS
+- **Componentes**: shadcn/ui, Lucide React
+- **Funcionalidades**: React DnD, React Query, date-fns
+- **Backend**: Supabase (PostgreSQL, Auth, Edge Functions)
+- **Build**: Vite
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📂 Estrutura do Projeto
 
-**Use your preferred IDE**
+```
+├── src/
+│   ├── components/          # Componentes React
+│   ├── contexts/           # Contextos do React
+│   ├── hooks/              # Hooks customizados
+│   ├── pages/              # Páginas da aplicação
+│   ├── types/              # Definições TypeScript
+│   └── lib/                # Utilitários
+├── imagens/                # Assets e mockups
+├── testes/                 # Testes automatizados
+├── roadmap/                # Documentação e planejamento
+└── supabase/               # Configurações do Supabase
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Como Executar
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Pré-requisitos
+- Node.js 18+ 
+- npm ou yarn
+- Conta no Supabase (opcional)
 
-Follow these steps:
+### Instalação
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Clone o repositório
+git clone <URL_DO_REPOSITORIO>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Entre na pasta do projeto
+cd sistema-favoritos
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Instale as dependências
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Configuração do Supabase (Opcional)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Crie um projeto no [Supabase](https://supabase.com)
+2. Configure as variáveis de ambiente
+3. Execute as migrações do banco de dados
 
-**Use GitHub Codespaces**
+## 📋 Funcionalidades Implementadas
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- ✅ Sistema de favoritos com pastas e links
+- ✅ Interface drag-and-drop
+- ✅ Sistema de tags
+- ✅ Busca e filtros avançados
+- ✅ Modal de criação/edição
+- ✅ Interface completamente em português
+- ✅ Design responsivo com tema escuro
 
-## What technologies are used for this project?
+## 🚧 Próximas Funcionalidades
 
-This project is built with:
+- [ ] Sincronização com Supabase
+- [ ] Sistema de autenticação
+- [ ] Compartilhamento de favoritos
+- [ ] Importação/exportação
+- [ ] Temas personalizáveis
+- [ ] Atalhos de teclado
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📖 Documentação
 
-## How can I deploy this project?
+- [PRD - Documento de Requisitos](./roadmap/prd.md)
+- [Roadmap de Desenvolvimento](./roadmap/README.md)
 
-Simply open [Lovable](https://lovable.dev/projects/3adcb1e8-4878-498d-bd31-0d22f73a01f7) and click on Share -> Publish.
+## 🤝 Como Contribuir
 
-## Can I connect a custom domain to my Lovable project?
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'feat: adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
-Yes, you can!
+## 📝 Licença
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🎯 Status do Projeto
+
+**Fase Atual**: MVP Concluído  
+**Próxima Fase**: Integração com Supabase  
+**Versão**: 1.0.0
+
+---
+
+**Desenvolvido com ❤️ pela equipe Aluno PaaS**
+
+Para mais informações técnicas, consulte a [documentação completa](./roadmap/prd.md).
