@@ -224,7 +224,7 @@ export const BookmarkModal: React.FC<BookmarkModalProps> = ({ isOpen, onClose, b
                 <SelectValue placeholder="Selecione uma pasta (opcional)" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">🏠 Raiz</SelectItem>
+                <SelectItem value="root">🏠 Raiz</SelectItem>
                 {folders.map((folder) => (
                   <SelectItem key={folder.id} value={folder.id}>
                     {folder.icon} {folder.title}
