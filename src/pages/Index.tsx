@@ -1,13 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import React, { useState } from 'react';
+import { BookmarkProvider } from '@/contexts/BookmarkContext';
+import { BookmarkSidebar } from '@/components/BookmarkSidebar';
+import { BookmarkDetails } from '@/components/BookmarkDetails';
+import { BookmarkModal } from '@/components/BookmarkModal';
+import { useBookmarks } from '@/contexts/BookmarkContext';
+
+const MainContent: React.FC = () => {
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const { selectedBookmark } = useBookmarks();
+
+  const handleEdit = () => {
+    setIsEditModalOpen(true);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="h-screen flex bg-background overflow-hidden">
+      <BookmarkSidebar />
+      <BookmarkDetails onEdit={handleEdit} />
+      
+      <BookmarkModal
+        isOpen={isEditModalOpen}
+        onClose={() => setIsEditModalOpen(false)}
+        bookmark={selectedBookmark}
+      />
     </div>
+  );
+};
+
+const Index: React.FC = () => {
+  return (
+    <BookmarkProvider>
+      <MainContent />
+    </BookmarkProvider>
   );
 };
 
