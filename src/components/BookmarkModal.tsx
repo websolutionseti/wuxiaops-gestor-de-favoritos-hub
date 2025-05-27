@@ -185,7 +185,7 @@ export const BookmarkModal: React.FC<BookmarkModalProps> = ({ isOpen, onClose, b
                   placeholder="📁 ou 🔗"
                   className="flex-1"
                 />
-                <Button type="button" variant="outline" size="icon">
+                <Button type="button" variant="outline" size="icon" title="Enviar ícone">
                   <Upload className="w-4 h-4" />
                 </Button>
               </div>
@@ -211,7 +211,7 @@ export const BookmarkModal: React.FC<BookmarkModalProps> = ({ isOpen, onClose, b
                 type="url"
                 value={formData.url}
                 onChange={(e) => setFormData(prev => ({ ...prev, url: e.target.value }))}
-                placeholder="https://example.com"
+                placeholder="https://exemplo.com"
                 required
               />
             </div>
@@ -255,7 +255,7 @@ export const BookmarkModal: React.FC<BookmarkModalProps> = ({ isOpen, onClose, b
                 onKeyPress={(e) => e.key === 'Enter' && (e.preventDefault(), addTag())}
                 className="flex-1"
               />
-              <Button type="button" onClick={addTag} variant="outline" size="icon">
+              <Button type="button" onClick={addTag} variant="outline" size="icon" title="Adicionar tag">
                 <Plus className="w-4 h-4" />
               </Button>
             </div>
@@ -267,6 +267,7 @@ export const BookmarkModal: React.FC<BookmarkModalProps> = ({ isOpen, onClose, b
                     type="button"
                     onClick={() => removeTag(tag)}
                     className="hover:text-destructive"
+                    title="Remover tag"
                   >
                     <X className="w-3 h-3" />
                   </button>
