@@ -1,0 +1,45 @@
+# 👋 Olá, humano! Bem-vindo ao WUXIA-ops
+
+## Gerenciador de Favoritos WUXIA
+
+## 📌 Sobre o Projeto
+Este aplicativo é um sistema inovador de gerenciamento de favoritos, projetado para facilitar a organização de links de forma intuitiva e acessível. Com uma interface moderna inspirada no Microsoft Loop, ele permite a criação de uma hierarquia de favoritos com arrastar e soltar, tornando a experiência fluida e eficiente. O objetivo é oferecer uma ferramenta prática para indivíduos e equipes, garantindo acessibilidade e usabilidade.
+
+## 🚀 Características Principais
+- **Organização Hierárquica**: Criação de pastas e favoritos com estrutura aninhada.
+- **Drag-and-Drop**: Facilidade para reorganizar os favoritos dentro das pastas.
+- **Modo Escuro**: Interface moderna e otimizada para melhor usabilidade.
+- **Componentização**: Estrutura modular para facilitar manutenção e escalabilidade.
+- **Dados Simulados**: Permite testes e demonstrações sem conexão com o back-end.
+
+## 🔥 Funcionalidades no MVP
+- Criação e edição de favoritos com título, URL, ícone e pasta pai.
+- Exibição de detalhes no painel lateral.
+- Interface interativa para reorganização de favoritos.
+- Tema escuro ativado por padrão.
+
+## 📈 Funcionalidades Futuras
+- Sincronização com **Supabase** para armazenamento em tempo real.
+- Compartilhamento de favoritos e colaboração em equipe.
+- Customização de temas e suporte a tags.
+- Integração com APIs externas para importação/exportação de favoritos.
+
+## 🛠 Tecnologias Utilizadas
+- **React + Vite** (ou **Next.js**)
+- **Ant Design** para estilização
+- **Supabase** (para futuras integrações)
+
+## 📡 **Acompanhe a WUXIA-Ops!**
+Fique por dentro das novidades e atualizações do projeto seguindo a **WUXIA-Ops** nas redes sociais!  
+🔗 **WhatsApp:** [Grupo Oficial](https://chat.whatsapp.com/F6ej7BwVzJBAuoQBOzLCIO)  
+📺 **YouTube:** [@wuxiaops](https://www.youtube.com/@wuxiaops)  
+📸 **Instagram:** [@wuxiaops](https://www.instagram.com/wuxiaops/)  
+📘 **Facebook:** [Perfil Oficial](https://www.facebook.com/profile.php?id=61576626365073)  
+🔗 **LinkedIn:** [Grupo Profissional](https://www.linkedin.com/groups/10122322/)  
+
+## ⚖️ Licença
+Este projeto está disponível para uso, download e comercialização, **desde que os créditos sejam mantidos para WUXIA OPs e websolutions.eti.br, responsáveis pelo upload do arquivo original**.
+
+---
+
+Agora é só subir esse commit no seu repositório e continuar o desenvolvimento! Se precisar de mais ajustes, só chamar! 🚀🔥  
